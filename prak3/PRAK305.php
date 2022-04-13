@@ -18,15 +18,15 @@ if (isset($_POST['submit'])) {
         $teks=$_POST['teks'];
         $panjang = strlen($teks);
         $input = str_split($teks);
-        $j=0;
-        $k=0;
-        while($k<$panjang){
-            echo strtoupper($input[$j]);
+        $a=0;
+        $b=0;
+        while($b<$panjang){
+            echo strtoupper($input[$a]);
             for($i=1; $i<$panjang; $i++){
-                echo strtolower($input[$j]);
+                echo strtolower($input[$a]);
             }
-            $k++;
-            $j++;
+            $b++;
+            $a++;
         }
     }
 ?>
